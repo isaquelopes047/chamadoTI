@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form data-form>
+
+        <h2>Dados de cadastro de NF</h2>
+
+        <label for="Nome">Nome TI</label>
+        <input  
+            type="text" 
+            name="nome" 
+            placeholder="Nome" 
+            required data-nome>
+        <br /><br />
+
+        <label for="Setor">Setor do atendimento</label>
+        <select name="Setor" data-Setor>
+            <option value="Rastreamento">Rastreamento</option>
+            <option value="Acerto de contas">Acerto de contas</option>
+            <option value="RH">RH</option>
+            <option value="Atendimento">Atendimento</option>
+            <option value="Motorista">Motorista</option>
+        </select><br /><br />
+
+        <label for="Motivo">Motivo do chamado</label>
+        <select name="motivo" data-motivo>
+            <option value="Impressora">Impressora</option>
+            <option value="Cabeamento">Cabeamento</option>
+            <option value="Wi-fi">Wi-fi</option>
+            <option value="Celular">Celular</option>
+        </select><br /><br />
+
+        <label for="Data">Data</label>
+        <input 
+            type="datetime-local" 
+            name="data" 
+            required data-Data>
+        <br /><br />
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <script type="module" src="./controller/cadastroCliente.js"></script>
+</body>
+
+</html>
